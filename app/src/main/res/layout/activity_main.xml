@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+   <FrameLayout
+       android:id="@+id/home"
+       android:layout_width="match_parent"
+       android:layout_height="650dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.0"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.0" />
+
+
+<!--   <com.ismaeldivita.chipnavigation.ChipNavigationBar-->
+<!--       android:id="@+id/menu"-->
+<!--       android:layout_width="410dp"-->
+<!--       android:layout_height="86dp"-->
+<!--       android:background="#263238"-->
+<!--       android:paddingBottom="15dp"-->
+<!--       app:cnb_addBottomInset="false"-->
+<!--       app:cnb_addLeftInset="false"-->
+<!--       app:cnb_addRightInset="false"-->
+<!--       app:cnb_addTopInset="false"-->
+<!--       app:cnb_animationDuration="175"-->
+<!--       app:cnb_badgeColor="@color/white"-->
+<!--       app:cnb_iconSize="40dp"-->
+<!--       app:cnb_menuResource="@menu/bottom_menu"-->
+<!--       app:cnb_orientationMode="horizontal"-->
+<!--       app:cnb_radius="8dp"-->
+<!--       app:cnb_unselectedColor="@color/white"-->
+<!--       app:layout_constraintBottom_toBottomOf="parent"-->
+<!--       app:layout_constraintEnd_toEndOf="parent"-->
+<!--       app:layout_constraintHorizontal_bias="0.0"-->
+<!--       app:layout_constraintStart_toStartOf="parent"-->
+<!--       app:layout_constraintTop_toBottomOf="@+id/home" />-->
+
+   <com.google.android.material.bottomnavigation.BottomNavigationView
+       android:id="@+id/menu"
+       android:layout_width="410dp"
+       android:layout_height="86dp"
+       app:menu="@menu/bottom_menu"
+       app:itemIconTint="@drawable/bottom_navigation_selector"
+       app:itemTextColor="@drawable/bottom_navigation_selector"
+       app:cnb_iconSize="50dp"
+       android:orientation="horizontal"
+       app:cnb_animationDuration="175"
+       app:cnb_unselectedColor="@color/white"
+       android:background="#263238"
+       android:paddingBottom="15dp"
+       app:cnb_addBottomInset="false"
+       app:cnb_addLeftInset="false"
+       app:cnb_addRightInset="false"
+       app:cnb_addTopInset="false"
+       app:cnb_radius="8dp"
+       tools:ignore="BottomAppBar"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.0"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/home"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardId"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    app:cardCornerRadius="19dp"
+    app:cardBackgroundColor="#78909C"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <io.getstream.avatarview.AvatarView
+            android:id="@+id/avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            app:avatarViewInitials="AB"
+            app:avatarViewInitialsTextSize="21sp"
+            app:avatarViewInitialsTextSizeRatio="0.33"
+            app:avatarViewInitialsTextStyle="bold" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:ellipsize="marquee"
+            android:padding="5dp"
+            android:paddingStart="25dp"
+            android:singleLine="true"
+            android:text="Title :"
+            android:textColor="#ffffff"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/advent_pro_semibold" />
+
+        <!--        <TextView-->
+<!--            android:id="@+id/time"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="#ffffff"-->
+<!--            android:textSize="15sp"-->
+<!--            tools:ignore="UnknownId"-->
+<!--            app:fontFamily="@font/advent_pro"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:layout_alignParentRight="true"/>-->
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="68dp"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            app:fontFamily="@font/advent_pro"
+            tools:ignore="UnknownId" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="50dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="nidnns idnnfncs dcsdcnosdcosc sdncnsc acnaoccoac  wdwdwdawdascd cfsacasc acacacascasecdacdac acacdadcasdascascac acsdufvosivoisdv sodivosidvosd vsdocvnsodncosd cosndcoiansocnaosc aoncoicoaoc"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:fontFamily="@font/advent_pro"
+            tools:ignore="UnknownId" />
+
+
+        <ImageButton
+            android:id="@+id/more"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="55dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:paddingBottom="5dp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
